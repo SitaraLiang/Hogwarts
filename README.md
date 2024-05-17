@@ -1,2 +1,2 @@
 # Hogwarts
-(not)official school website of Hogwarts (fanwork)
+Fake school website of Hogwarts
