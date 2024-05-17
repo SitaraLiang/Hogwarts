@@ -1,0 +1,223 @@
+nav {
+    background: #e3e5e5;
+    border-bottom: 1px solid #bac5c6;
+
+    section:first-child p , section:first-child h2{
+        color: #121212;
+    }
+     ul li a{
+        color: #121212;
+     }
+}
+
+main > header {
+    display: flex;
+    background: #e3e5e5;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+        font-family: Canela Deck Web;
+        font-size: 56px;
+        line-height: 1.2;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -.1px;
+    }
+
+    form {
+        display: flex;
+        padding: 2% 0 0 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        gap: 16px;
+
+        input {
+            padding: 15px;
+            width: 50%;
+            font-size: 20px;
+            background: #e3e5e5;
+            border: none;
+            border-bottom: 1px solid #bac5c6;
+        }
+        button {
+            font-size: 30px;
+            background: #e3e5e5;
+            border: none;
+        }
+    }
+}
+
+main > section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:20px;
+    padding-top: 30px;
+    height: max-content;
+    position:relative;
+
+    button {
+        background-color: transparent;
+        border: 1px solid #1e1e1e;
+        border-radius: 100px;
+        color: #1e1e1e;
+        font-family: GT America Standard Regular;
+        font-size: 18px;
+        line-height: 1.5;
+        font-style: normal;
+        font-weight: 500;
+        padding: 8px 24px;
+        min-width: 150px;
+
+        a {
+            text-decoration: none;
+            color: #1e1e1e;
+        }
+    }
+
+    button:hover {
+        color: white;
+        background-color: #1e1e1e;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+main > section:nth-child(2)::after {
+    position: absolute;
+    bottom: -25px;
+    content: "";
+    border: 1px solid #d4d4d4;
+    width: 80%;
+}
+
+
+main > section:nth-child(3) {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 3% 0 10% 0;
+
+    article {
+        height: max-content;
+        width: 80%;
+        position:relative;
+
+        a {
+            color:#1e1e1e;
+            text-decoration: none;
+            font-family: Canela Deck Web;
+            font-size: 30px;
+            line-height: 1.2;
+            font-style: normal;
+            font-weight: 550;
+            letter-spacing: -.1px;
+        }
+
+        p:first-child {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: center;
+        }
+
+        p:nth-child(2) {
+            padding-bottom: 20px;
+            font-family: GT America Standard Regular;
+            line-height: 1.5;
+            font-style: normal;
+            font-weight: 400;
+            color: #1e1e1e;
+        }
+
+    }
+
+    article::after {
+        position: absolute;
+        content: "";
+        border: 1px solid #d4d4d4;
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1185px) {
+    main > header {
+        height: 50vh;
+    }
+    main > section:nth-child(2)::after {
+        bottom: -30px;
+    }
+    main > section:nth-child(3) {
+        margin-top: 3%;
+        article {
+            height: max-content;
+        }
+    }
+}
+
+
+@media screen and (min-width: 520px) and (max-width: 799px) {
+    main > header {
+        height: 50vh;
+    }
+    main > section:nth-child(2)::after {
+        bottom: -30px;
+    }
+    main > section:nth-child(3) {
+        margin-top: 5%;
+        article {
+            height: max-content;
+        }
+    }
+}
+
+@media screen and (max-width: 519px) {
+    main > header {
+        height: 50vh;
+        h1 {
+            font-size: 35px;
+        }
+        form {
+            input {
+                font-size: 15px;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+    }
+
+    main > section:nth-child(2) {
+        button {
+            min-width: 100px;
+            padding: 8px 0 8px 0;
+            font-size: 15px;
+        }
+    }
+    main > section:nth-child(2)::after {
+        bottom: -30px;
+    }
+    main > section:nth-child(3) {
+        margin-top: 5%;
+        article {
+            height: max-content;
+        }
+    }
+}
